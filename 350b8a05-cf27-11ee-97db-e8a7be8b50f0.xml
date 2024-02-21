@@ -1,0 +1,26 @@
+<annotation>
+	<folder>collectedimages</folder>
+	<filename>350b8a05-cf27-11ee-97db-e8a7be8b50f0.jpg</filename>
+	<path>C:\Users\Pravin Kumar R\RealTimeObjectDetection\Tensorflow\workspace\images\collectedimages\350b8a05-cf27-11ee-97db-e8a7be8b50f0.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>640</width>
+		<height>480</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>God_Bless_You</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>148</xmin>
+			<ymin>170</ymin>
+			<xmax>566</xmax>
+			<ymax>405</ymax>
+		</bndbox>
+	</object>
+</annotation>

@@ -1,0 +1,34 @@
+<!-- templates/index.html -->
+
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Project</title>
+</head>
+<body>
+    <h1>Food Project</h1>
+    <form action="/detect_hunger" method="post" enctype="multipart/form-data">
+        <input type="file" name="image" accept="image/*" required>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result"></p>
+
+    <script>
+        document.forms[0].addEventListener('submit', function (event) {
+            event.preventDefault();
+            var formData = new FormData(this);
+            fetch('/detect_hunger', {
+                method: 'POST',
+                body: formData
+            })
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('result').innerText = data.is_hungry ? 'Hungry' : 'Not Hungry';
+            });
+        });
+    </script>
+</body>
+</html>
